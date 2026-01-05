@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+}
+.logo  {
+    margin-left: auto;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /*فاصله منوها*/
+    list-style: none; /*حذف دایره‌های منو*/
+}
+
+.menu a {
+    text-decoration: none; /*برداشتن خط لینک*/
+    color: #777;
+}
+
+.menu a:hover {
+    color: #2196f3;
+}
+
+.profile-card {
+    width: 80%;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);/*سایه‌ی نرم و ملایم زیر المان*/
+    overflow: hidden; /*محتوایی که از کادر عنصر بیرون میزنه دیده نشه*/
+}
+
+.banner {
+    position: relative;
+    background: linear-gradient(135deg, #2196f3, #42a5f5);
+    display: flex;
+    flex-direction: row-reverse;/*آیتم‌ها در یک ردیف ولی از راست به چپ*/
+    justify-content: space-between; /*اولی می‌چسبه یه طرف، آخری طرف دیگه*/
+    align-items: center;
+    padding: 40px;
+    margin: 10px;
+    height: 270px;
+    color: #fff;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.info p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.socials a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    color: #2196f3;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-left: 8px;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.socials a:hover {
+    transform: scale(1.2);         /* بزرگ شدن آیکون هنگام هاور */
+    color: #0052a3;                /* تغییر رنگ هنگام هاور */
+  }
+
+.avatar img {
+    position: relative;
+    width: 270px;
+    top: 50px;
+}
+
+.content {
+    display: flex;
+    padding: 50px;
+    gap: 40px;
+}
+
+.details {
+    width: 40%;
+}
+
+.details p {
+    margin-bottom: 10px;
+}
+
+.details span {
+    color: #555;
+    font-weight: bold;
+}
+
+.about {
+    width: 60%;
+}
+
+.about h3 {
+    margin-bottom: 10px;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2196f3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background: #0052a3;
+}
